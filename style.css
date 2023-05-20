@@ -8,10 +8,12 @@ html, body {
   padding: 0;
   height: 100%;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 * {
   box-sizing: inherit;
+  font-family: inherit;
 }
 
 body {
@@ -21,7 +23,7 @@ body {
 
 .sidebar {
   position: relative;
-  flex: 1;
+  flex: 1.2;
 }
 
 .overlay {
@@ -29,7 +31,7 @@ body {
   top: 200px;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  padding: 15px;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +46,86 @@ body {
   display: inline;
 }
 
+.credit {
+  position: absolute;
+  width: 100%;
+  bottom: 1rem;
+  color: #fff;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.credit a {
+  color: #fff;
+}
+
 .main {
-  flex: 2;
-  padding: 15px;
+  flex: 1.8;
+}
+
+.description {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 6rem 0 5rem 2rem;
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  border: 0;
+}
+
+legend {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 2rem;
+}
+
+label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 2px;
+}
+
+input {
+  width: 250px;
+  height: 30px;
+  border: 1px solid #E5E7EB;
+  border-radius: 3px;
+}
+
+input:invalid {
+  border: 1px solid #f32;
+}
+
+.form-row {
+  margin: 1rem 4rem 2rem 2rem;
+}
+
+.inputs {
+  box-shadow: 0 3px 2px #D5D7DB;
+}
+
+button {
+  margin: 2rem;
+  border: 0;
+  background-color: #596D48;
+  width: 180px;
+  height: 40px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login {
+  margin: 0 2rem;
+}
+
+.login a {
+  text-decoration: none;
+  color: #595959;
+  font-weight: 700;
 }
