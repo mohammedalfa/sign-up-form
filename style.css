@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url(./fonts/Norse-Bold.otf)
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex: auto;
+}
+
+.sidebar {
+  position: relative;
+  flex: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Norse Bold", monospace;
+  font-size: 5rem;
+}
+
+.overlay img {
+  height: 110px;
+  width: 80px;
+  display: inline;
+}
+
+.main {
+  flex: 2;
+  padding: 15px;
+}
